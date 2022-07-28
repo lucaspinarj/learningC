@@ -1,9 +1,11 @@
 #include <stdlib.h>
 
-const i = 10;
-const MAX_PILHA = i;
+const int i = 10;
+const int MAX_PILHA = i;
+
 topo = i - 1;
-pilha[i];
+
+int pilha[i];
 
 typedef Elemento;
 
@@ -30,7 +32,8 @@ int push(Elemento elemento) {
 //desempilhar
 int pop() {
     No *aux;
-    Elemento elemento_recuperado;
+    Elemento *elemento_recuperado;
+    Elemento *elemento;
     if (topo != NULL) {
         elemento_recuperado -> topo -> elemento;
         aux = topo;
@@ -42,7 +45,7 @@ int pop() {
     }
 }
 
-
+// APENAS DEMONSTRAÇÃO
 
 int main() {
 

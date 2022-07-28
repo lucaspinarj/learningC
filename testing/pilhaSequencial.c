@@ -1,9 +1,9 @@
-typedef Elemento;
+typedef int Elemento;
 
-const i = 10;
-const MAX_PILHA = i;
-topo = i - 1;
-pilha[i];
+const int i = 10;
+const int MAX_PILHA = i;
+int topo = i - 1;
+int pilha[i];
 
 
 // empilhar

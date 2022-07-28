@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-typedef Elemento;
+typedef int Elemento;
 
 // definição de um nó para lista encadeada simples
 typedef struct {
@@ -10,12 +10,12 @@ typedef struct {
 } No;
 
 // definição de um nó para lista duplamente encadeada
-typedef struct {
-    int chave;
-    Elemento elemento;
-    No *ant;
-    No *prox;
-} No2;
+// typedef struct {
+//     int chave;
+//     Elemento elemento;
+//     No *ant;
+//     No *prox;
+// } No;
 
 No *no_cabeca;
 
@@ -56,7 +56,7 @@ int inserir(No *no_ant, Elemento novo_elemento, int chave) {
 }
 
 // remoção
-remover(No *no_cabeca, int chave) {
+int remover(No *no_cabeca, int chave) {
     No *aux, *anterior = no_cabeca;
     aux = buscar(no_cabeca, &anterior, chave);
     if (aux != NULL) {
@@ -66,8 +66,9 @@ remover(No *no_cabeca, int chave) {
     } else {
         return 0; // falha na remoção
     }
-
 }
+
+// APENAS DEMONSTRAÇÃO
 
 int main() {
 
